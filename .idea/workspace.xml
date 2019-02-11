@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f5fbee5-ef85-4b6d-b9be-c5254461d4c0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/html/function.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/generics.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ts/function.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ts/generics.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/enum.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ts/enum.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -46,16 +44,43 @@
         <entry file="file://$PROJECT_DIR$/html/generics.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generics.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="generics.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ts/generics.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+            <state relative-caret-position="380">
+              <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enum.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ts/enum.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enum.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ts/enum.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enum.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/enum.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -83,43 +108,13 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="interface.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ts/interface.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ts/class.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="78" column="6" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/class.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="TypeScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -138,6 +133,8 @@
         <option value="$PROJECT_DIR$/ts/function.ts" />
         <option value="$PROJECT_DIR$/html/generics.html" />
         <option value="$PROJECT_DIR$/ts/generics.ts" />
+        <option value="$PROJECT_DIR$/html/enum.html" />
+        <option value="$PROJECT_DIR$/ts/enum.ts" />
       </list>
     </option>
   </component>
@@ -150,7 +147,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="331" />
     <option name="y" value="-8" />
     <option name="width" value="1378" />
@@ -185,7 +182,7 @@
               <item name="TypeScirpt" type="b2602c69:ProjectViewProjectNode" />
               <item name="TypeScirpt" type="462c0819:PsiDirectoryNode" />
               <item name="ts" type="462c0819:PsiDirectoryNode" />
-              <item name="generics.ts" type="620a8d5e:NestingTreeNode" />
+              <item name="enum.ts" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -215,8 +212,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.generics.html">
+  <component name="RunManager" selected="JavaScript Debug.enum.html">
     <configuration name="class.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TypeScirpt/html/class.html" />
+    <configuration name="enum.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TypeScirpt/html/enum.html" />
     <configuration name="function.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TypeScirpt/html/function.html" />
     <configuration name="generics.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TypeScirpt/html/generics.html" />
     <configuration name="interface.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TypeScirpt/html/interface.html" />
@@ -225,9 +223,11 @@
       <item itemvalue="JavaScript Debug.class.html" />
       <item itemvalue="JavaScript Debug.function.html" />
       <item itemvalue="JavaScript Debug.generics.html" />
+      <item itemvalue="JavaScript Debug.enum.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.enum.html" />
         <item itemvalue="JavaScript Debug.generics.html" />
         <item itemvalue="JavaScript Debug.function.html" />
         <item itemvalue="JavaScript Debug.class.html" />
@@ -245,12 +245,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549863660206</updated>
-      <workItem from="1549863666838" duration="8395000" />
+      <workItem from="1549863666838" duration="9763000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8395000" />
+    <option name="totallyTimeSpent" value="9763000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -284,6 +284,7 @@
         <option value="$PROJECT_DIR$/ts/data type.js" />
         <option value="$PROJECT_DIR$/ts/function.js" />
         <option value="$PROJECT_DIR$/ts/generics.js" />
+        <option value="$PROJECT_DIR$/ts/enum.js" />
       </list>
     </option>
   </component>
@@ -365,7 +366,7 @@
     <entry file="file://$PROJECT_DIR$/html/generics.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -378,8 +379,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ts/generics.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        <state relative-caret-position="380">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/enum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ts/enum.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ts/enum.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
         </state>
       </provider>
     </entry>

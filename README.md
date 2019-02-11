@@ -406,3 +406,29 @@ function test<t extends jicheng>(arg: t): t {
 }
 test('hello');
 ```
+
+# TypeScript 枚举
+* 使用枚举我们可以定义一些带名字的常量。 使用枚举可以清晰地表达意图或创建一组有区别的用例。 TypeScript支持数字的和基于字符串的枚举。
+* **数字枚举**，当枚举内只有第一个变量有初始化外，且为数字时，后面的所有变量都会依次加1；
+* 使用**枚举名. key**获取枚举的key的value，使用 枚举名[value] 获取value所对应的key；
+* 枚举中可以使用简易的计算
+```javascript
+// 数字枚举
+enum Person { 
+    face = 1,
+    ears,   
+    nose
+}
+console.log( Person.face );
+console.log( Person.ears );
+console.log( Person[3] );
+
+// 枚举计算
+enum People { 
+    zhang = 2,
+    wang = zhang * 3, 
+    li = 'li'.length,
+}
+console.log( People.wang );
+console.log( People.li );
+```
