@@ -347,4 +347,62 @@ console.log( point1.calculate( {x:10,y:10} ));
 console.log( point2.calculate( {x:10,y:10} ));
 ```
 
+# TypeScript 泛型
+* 泛型其实类似于模板组件，
+可以使用泛型来创建可重用的组件，一个组件可以支持多种类型的数据。
+## 简易泛型
+```javascript
+// 在函数名后加<t>代表泛型函数，其中的t即模板
+// 该函数表示传入的参数类型与函数返回类型需一致
+function identity<t>(arg: t): t { 
+    return arg;
+}
+console.log(identity('woshi'));
+```
 
+## 数组泛型
+```javascript
+function loggingIdentity<T>(arg: T[ ]): T[ ] {
+    console.log(arg.length); // Array has a .length, so no more error
+    return arg; 
+}
+```
+
+## 接口泛型
+```javascript
+interface ss<t> {    
+    (arg: t) : t
+}
+function Add<t>(arg: t): t {
+    return arg;
+}
+let add: ss<number> = Add;
+console.log( dd(10) );
+```
+
+## 类 泛型
+```javascript
+class GenericNumber<T> { 
+    zeroValue: T;   
+    add: (x: T, y: T) => T;
+}
+let myGenericNumber = new GenericNumber<number>();
+myGenericNumber.zeroValue = 0;
+myGenericNumber.add = function(x, y) {
+    return x + y;
+};
+```
+
+## 泛型继承
+```javascript
+//** 泛型继承
+interface jicheng {  
+    length: number;
+}
+// test的泛型继承了jicheng接口的方法length
+function test<t extends jicheng>(arg: t): t {
+    console.log(arg.length);  
+    return arg;
+}
+test('hello');
+```
