@@ -28,6 +28,7 @@
 //     return newSquare;
 // }
 //
+
 // let mySquare = createSquare({color: 'black'});
 // console.log(mySquare);
 
@@ -113,3 +114,14 @@
 // c.reset();
 // c.interval = 5.0;
 // console.log(typeof c);
+interface Clock {
+    (src: string, sub: string):boolean;
+}
+
+let myClock : Clock;
+myClock = function (src: string, sub:string) {
+    const result = src.search(sub);
+    return result > -1;
+}
+let result = myClock('hhaa','h');
+console.log(result);

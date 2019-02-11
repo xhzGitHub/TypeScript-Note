@@ -233,5 +233,118 @@ console.log( square );
 // 输出 => {sideLength: 12, color: "blue"}
 ```
 
+# TypeScript 类
+## 类的声明
+* 类中，需要有属性，方法，构造函数。构造函数用于传参。
+```javascript
+// 类的声明
+class Family {
+    father: string;
+    mother: string;
+    greeting( ){
+        return `hi, I'm ${ this.father }'s son`
+    }
+    constructor( father: string, mother: string ){
+        this.father = father;
+        this.mother = mother;   
+    }}
+    
+const family = new Family('xsj','cm');
+console.log(family);
+console.log(family.father);
+console.log(family.greeting());
+
+// 输出 => Family {father: "xsj", mother: "cm"}
+// 输出 => xsj
+// 输出 => hi, I'm xsj's son
+```
+
+## 类 继承
+* 类的继承需要使用关键词 **extends**
+* 子类的构造函数继承父类构造函数，使用**super(父类属性)**
+* 继承父类方法使用**super . 父类方法**
+```javascript
+class Son extends Family{    
+    age: number;   
+    // 构造函数    
+    constructor( fatherName: string, age: number ){
+        super( fatherName );  // 继承父类属性    
+        this.age = age;
+    }
+    hi( age = this.age ){
+        super.greeting(age);    // 继承父类方法    
+    }
+}
+const son = new Son('xsj', 26);
+son.hi( );
+console.log(son);
+// 输出 => hi, I'm xsj's son, I'm 26 years old
+// 输出 => Son {father: "xsj", mother: undefined, age: 26}
+```
+
+## 公有，私有和受保护的修饰符
+### public
+* 在Ts中，所有类中的变量，默认为public（公有的），
+
+### private
+* 声明了private的变量，是**不能**在声明它的类之外所访问， 即只能在class类中被访问
+```javascript
+class Animal { 
+    private name: string; 
+    constructor( name: string ){
+        this.name = name; 
+        }
+    }
+const dog = new Animal( 'dog' );
+console.log(dog.name);  // error
+```
+
+### protected
+* protected 与 pirvate类似，但是protected还能在派生类的class中被访问
+```javascript
+// protected
+class Person {  
+    protected name: string;
+    private age: number;
+    constructor( name: string, age: number ){
+        this.name = name;   
+        this.age = age; 
+    }
+}
+class Employee extends Person{  
+    private department: string;
+    constructor( name:string, age: number, department: string ){
+        super(name,age);   
+        this.department = department;  
+    }
+    public get( ){
+        console.log(this.name);    
+        console.log(this.age); // error, private不能被派生类访问       
+        return `Hello, my name is ${this.name} and I work in ${this.department}`   
+    }
+}
+const employee = new Employee('xhz', 26, 'online');
+console.log(employee.get());
+```
+
+### static
+* static即在类中声明的变量存在于类本身上，而不是类的实例化上，因为不是通过构造函数创建的
+```javascript
+// ***** static
+class Grid {
+    static origin = {x: 0, y: 0}; 
+    calculate( point: {x: number, y: number} )
+    {
+        const distX = point.x - Grid.origin.x; 
+        const distY = point.y - Grid.origin.y;  
+        return Math.sqrt( distX * distX + distY * distY ) / this.scale;
+    }
+    constructor( public scale: number ){ }
+}
+const point1 = new Grid(1);
+const point2 = new Grid(5);
+console.log( point1.calculate( {x:10,y:10} ));
+console.log( point2.calculate( {x:10,y:10} ));
+```
 
 
